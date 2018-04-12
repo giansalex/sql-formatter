@@ -1,0 +1,19 @@
+{
+    "name": "giansalex/sql-formatter",
+    "description": "Sql formatter application",
+    "keywords": ["php", "sql", "sql formatter"],
+    "homepage": "https://github.com/vijinho/f3-boilerplate",
+    "license": "GPL-3.0+",
+    "type": "application",
+    "authors": [
+        {
+            "name": "Giancarlos Salas",
+            "email": "giansalex@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "jdorn/sql-formatter": "dev-master"
+    }
+}
