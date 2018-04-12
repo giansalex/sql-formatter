@@ -40,12 +40,9 @@ $formatted_sql = empty($sql) ? '' : SqlFormatter::format($sql);
     <div class="row">
       <div class="one-half column">
         <h1>SQL Formatter</h1>
-        <?php if (!empty($formatted_sql)): ?>
-        <?=$formatted_sql?>
-        <?php endif ?>
         <form action="/index.php" method="POST">
           <label for="sql">Enter your SQL:</label>
-          <textarea class="u-full-width" placeholder="SELECT …" name="sql" id="sql"><?=$sql?></textarea>
+          <textarea class="u-full-width" placeholder="SELECT …" name="sql" id="sql" style="height: 200px"><?=$sql?></textarea>
           <input class="button-primary" type="submit" value="Reformat my query!">
         </form>
         <hr>
@@ -53,6 +50,12 @@ $formatted_sql = empty($sql) ? '' : SqlFormatter::format($sql);
             <li>SQL formatted with: <a href="http://jdorn.github.io/sql-formatter/">http://jdorn.github.io/sql-formatter/</a>
             <li>Website CSS uses <a href="http://getskeleton.com/">Skeleton</a>
         </ul>
+      </div>
+      <div class="one-half column">
+          <?php if (!empty($formatted_sql)): ?>
+              <h1>Pretty SQL</h1>
+              <?=$formatted_sql?>
+          <?php endif ?>
       </div>
     </div>
   </div>
